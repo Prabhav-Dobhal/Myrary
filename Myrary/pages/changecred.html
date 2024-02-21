@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="changecred.css">
+</head>
+<body>
+    <button class="home-button">Home</button>
+    <div class="heading">
+        Change Credentials
+    </div>
+    <div class="details">
+    <div class="name">
+        Name
+        <input type="text" id="changecredname">
+    </div>
+    <div class="phone">
+        Phone No
+        <input type="tel" id="changecredphone">
+    </div>
+    <div class="email">
+        Email
+        <input type="email" id="changecredemail">
+    </div>
+    <div class="submit">
+    <button>Submit</button>
+    </div>
+    </div>
+    <div class="changepass">
+        <button>Change My Password</button>
+    </div>
+    <script>
+        const button = document.querySelector('.home-button');
+        button.addEventListener('click', () => {
+         window.location.href = 'homepage.html'; 
+        });
+
+        const button2 = document.querySelector('.changepass');
+        button2.addEventListener('click',()=>{
+            window.location.href = 'changepass.html';
+        })
+    </script>
+</body>
+</html>

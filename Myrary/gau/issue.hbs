@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/css/issue.css">
+</head>
+<body>
+    <button class="home-button">Home</button>
+    <div class="heading">
+        Issue Book
+    </div>
+    <form action="/issue" method="POST">
+        <div class="details">
+            <div class="input-container">
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="phoneno">Phone No</label>
+                <input type="number" id="phoneno" name="phoneno" required>
+            </div>
+            {{#each books}}
+            <div class="book-item">
+                <label for="{{this._id}}">
+                    {{this.book}}
+                    <input type="checkbox" id="{{this._id}}" name="books" value="{{this._id}}">
+                </label>
+            </div>
+            {{/each}}
+        <div class="submit">
+            <button class="submit2">Add Selected Books</button>
+        </div>
+        </div>
+    </form>
+<script>
+    const button = document.querySelector('.home-button');
+    button.addEventListener('click', () => {
+        window.location.href = '/homepage'; 
+    });
+    const submit = document.querySelector('.submit2');
+    submit.addEventListener('click', () => {
+    const form = document.querySelector('form');
+    const formData = new FormData(form);
+    const selectedBooks = formData.getAll('books'); // Get all the selected book IDs as an array
+    const usernameInput = formData.get('username'); // Get the value of the username input
+    const phonenoInput = formData.get('phoneno');
+    console.log('Selected Books:', selectedBooks);
+
+    fetch('/issue', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json' // Set the content type to JSON
+        },
+        body: JSON.stringify({
+            username: usernameInput,
+            phoneno: phonenoInput,
+            books: selectedBooks
+        }) // Convert the form data to a JSON string
+    })
+    .then((response) => {
+        if (response.ok) {
+            response.json(); // Parse the response data as JSON
+        } else {
+            throw new Error('Network response was not ok.');
+        }
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+    window.location.href = '/homepage';
+});
+
+</script>
+
+</body>
+</html>

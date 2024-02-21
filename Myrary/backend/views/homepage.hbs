@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/homepage.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="logout">Logout</button>
+    <button class="changecred" >Change Credentials</button>
+    <div class="heading">
+        Welcome To Myrary
+    </div>
+    <div class="allcards">
+    <ul class ="cards">
+        <li class="noofbooks">
+            No. of Books
+            <br>
+            Quantity: {{q}}
+        </li>
+        <li class="addnewbook">
+            Add New <br> Book
+        </li>
+        <li class="notreturned">
+            No. Of Books <br> Not Returned: {{nr}}
+        </li>
+        <li class="viewallbooks">
+            View All <br> Books
+        </li>
+        <li class="issuebook">
+            Issue Book
+        </li>
+        <li class="returnbook">
+            Return Book
+        </li>
+    </ul>
+    </div>
+    <script>
+        const button = document.querySelector('.changecred');
+        button.addEventListener('click', () => {
+            window.location.href = '/changecred'; 
+        });
+
+        const button2 = document.querySelector('.logout');
+        button2.addEventListener('click', () => {
+            window.location.href = '/index'; 
+        });
+
+        const addNewBookButton = document.querySelector('.addnewbook');
+        addNewBookButton.addEventListener('click', () => {
+            window.location.href = '/addbook'; 
+        });
+
+        const viewAllBooksButton = document.querySelector('.viewallbooks');
+        viewAllBooksButton.addEventListener('click', () => {
+            window.location.href = '/viewbooks'; 
+        });
+
+        const issueBookButton = document.querySelector('.issuebook');
+        issueBookButton.addEventListener('click', () => {
+            window.location.href = '/issue'; 
+        });
+        const returnBookButton = document.querySelector('.returnbook');
+        returnBookButton.addEventListener('click', () => {
+            window.location.href = '/returnbook'; 
+        });
+    </script>
+</body>
+</html>

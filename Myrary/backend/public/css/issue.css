@@ -1,0 +1,111 @@
+body{
+    background-image: url("/images/issue.jpg");
+    background-size: cover;
+}
+.heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 14vh;
+    font-size: 12vh;
+    font-style: italic;
+    /* color:rgb(127, 255, 185); */
+}
+.details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    background-color: rgba(204, 87, 60, 0.24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+.username { 
+  margin-left: 1.5vh;
+  font-size: 7vh;
+  margin-top: 2vh; /* Adjusted margin-top to reduce the space */
+  margin-right: 5vh; /* Added margin-right to create space between the label and input */
+  display: flex;
+}
+
+.phonenumber { 
+  margin-left: 1.5vh;
+  font-size: 7vh;
+  margin-top: 1vh; /* Adjusted margin-top to reduce the space */
+  margin-right: 5vh; /* Added margin-right to create space between the label and input */
+  display: flex;
+}
+.details button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+  }
+  
+  .details button:hover {
+    background-color: #45a049; 
+  }
+  .details input{
+    font-size: 2.5vh;
+    background-color: rgba(128, 128, 128, 0.383);
+  }
+  .submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 10px;  */
+}
+
+  .home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #bf4138;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+}
+.book-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 5vh;
+}
+
+.input-container {
+  background-color: rgba(233, 85, 57, 0.1);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.input-container label {
+  font-size: 6vh;
+  margin-right: 2vh; 
+}
+
+.input-container input {
+  font-size: 2.5vh;
+  background-color: rgba(128, 128, 128, 0.383);
+  padding: 1vh; 
+  border: none;
+}
+#phoneno{
+  margin-left: 26px;
+}

@@ -1,0 +1,112 @@
+body{
+    background-image: url("library.jpg");
+}
+.heading {
+    display: flex;
+    align-items: center; /* Vertically center the text */
+    justify-content: center;
+    height: 14vh;
+    font-size: 12vh;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold; /* Make the font bold */
+    background-color: rgb(196, 84, 84); /* Add the background color */
+  }
+  
+.logout {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #bf4138;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.logout:hover {
+    background-color: #45a049;
+}
+.changecred{
+    left:10px;
+    background-color: white;
+    padding: 10px 20px;
+    border:none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.changecred:hover{
+    background-color: gray;
+}
+
+/* ... Your existing CSS ... */
+
+.allcards {
+    /* Create a container to center the horizontal list */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+  
+  .cards {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the list horizontally */
+    flex-wrap: wrap; /* Allow buttons to wrap to the next row if needed */
+    max-width: 600px; /* Set a maximum width for the list */
+  }
+  
+  .cards li {
+    /* Your existing styles for .cards li elements */
+    cursor: pointer;
+    background-color: #FF5722;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    border: none;
+    box-shadow: none;
+    width: 200px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 1.5;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+    border-radius: 5px;
+    margin: 10px; /* Add spacing between the buttons */
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .cards li:before,
+.cards li:after {
+  /* Pseudo-elements for the fill-in animation */
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #FBC02D;
+  z-index: -1;
+  transition: width 0.3s;
+}
+
+.cards li:hover:before {
+  /* Fill-in animation on hover */
+  width: 100%;
+}
+
+.cards li:hover:after {
+  /* Prevent the fill color from disappearing immediately on hover */
+  width: 100%;
+  transition-delay: 0.3s;
+}
+
+.cards li:hover {
+  /* Your existing styles for button hover */
+  transform: translateY(-5px);
+}

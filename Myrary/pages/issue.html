@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="issue.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="home-button">Home</button>
+    <div class="heading">
+        Issue Book
+    </div>
+    <div class="details">
+    <div class="username">
+        User Name
+        <input type="email" id="username">
+    </div>
+    <div class="phonenumber">
+        Phone number
+        <input type="tel" id="phonenumber">
+    </div>
+    <div class="submit">
+    <button>Issue</button>
+    </div>
+    </div>
+    <script>
+        const button = document.querySelector('.home-button');
+        button.addEventListener('click', () => {
+         window.location.href = 'homepage.html'; 
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="logout">Logout</button>
+    <button class="changecred" >Change Credentials</button>
+    <div class="heading">
+        Welcome To Myrary
+    </div>
+    <div class="allcards">
+    <ul class ="cards">
+        <li class="noofbooks">
+            No. of Books
+            <br>
+            Quantity: 
+        </li>
+        <li class="addnewbook">
+            Add New <br> Book
+        </li>
+        <li class="notreturned">
+            No. Of Books <br> Not Returned
+        </li>
+        <li class="viewallbooks">
+            View All <br> Books
+        </li>
+        <li class="issuebook">
+            Issue Book
+        </li>
+    </ul>
+    </div>
+    <script>
+        const button = document.querySelector('.changecred');
+        button.addEventListener('click', () => {
+         window.location.href = 'changecred.html'; 
+        });
+
+        const button2 = document.querySelector('.logout');
+        button2.addEventListener('click', () => {
+         window.location.href = 'index.html'; 
+        });
+    </script>
+</body>
+</html>

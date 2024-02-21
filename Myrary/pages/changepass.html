@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="changepass.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="home-button">Home</button>
+    <div class="heading">
+        Change Password
+    </div>
+    <div class="details">
+    <div class="password">
+        Password
+        <input type="password" id="password">
+    </div>
+    <div class="confirmpassword">
+        Confirm Password
+        <input type="password" id="confirmpassword">
+    </div>
+    <div class="submit">
+    <button>Update</button>
+    </div>
+    </div>
+    </div>
+    <script>
+        const button = document.querySelector('.home-button');
+        button.addEventListener('click', () => {
+         window.location.href = 'homepage.html'; 
+        });
+    </script>
+</body>
+</html>

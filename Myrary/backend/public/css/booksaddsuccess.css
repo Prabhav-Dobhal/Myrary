@@ -1,0 +1,35 @@
+body{
+    background-image: url("/images/booksaddsuccess.jpg");
+    background-size: 111% 104%; 
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #bf4138;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.home-button:hover {
+    background-color: #45a049;
+}
+.heading{
+    display: flex;
+align-items: center;
+justify-content: center;
+height: 14vh;
+font-size: 11vh;
+font-style: italic;
+background-color: #cbcbec;
+padding: 10px;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

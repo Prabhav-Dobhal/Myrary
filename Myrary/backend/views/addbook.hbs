@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/addbook.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="home-button">Home</button>
+    <div class="heading">
+        Add Book
+    </div>
+    <div class="details">
+    <form action="/addbook" method="POST">
+    <div class="bookname">
+        Book Name
+        <input type="text" id="bookname" name="bookname" required>
+    </div>
+    <div class="quantity">
+        Quantity
+        <input type="number" id="quantity" name="quantity" required>
+    </div>
+    <div class="submit">
+    <button>Submit</button>
+    </div>
+    </form>
+    </div>
+    <script>
+        const button = document.querySelector('.home-button');
+    button.addEventListener('click', () => {
+        window.location.href = '/homepage'; 
+    });
+    </script>
+</body>
+</html>

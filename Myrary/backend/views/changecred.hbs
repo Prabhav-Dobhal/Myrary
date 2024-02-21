@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/changecred.css">
+</head>
+<body>
+    <button class="home-button">Home</button>
+    <button class="changepass">Change My Password</button>
+    <div class="heading">
+        Change Credentials
+    </div>
+    <form action="/changecred" method="POST">
+    <div class="details">
+    <div class="name">
+        Name
+        <input type="text" id="changecredname" name="name" required>
+    </div>
+    <div class="phone">
+        Phone No
+        <input type="tel" id="changecredphone" name="phoneno" required>
+    </div>
+    <div class="email">
+        Current Email
+        <input type="email" id="changecredemail" name="email" required>
+    </div>
+    <div class="submit">
+    <button>Submit</button>
+    </div>
+    </div>
+    </form>
+    <script>
+        const homeButton = document.querySelector('.home-button');
+        homeButton.addEventListener('click', () => {
+            window.location.href = '/homepage'; // Set the route path here
+        });
+
+        const changePassButton = document.querySelector('.changepass');
+        changePassButton.addEventListener('click', () => {
+            window.location.href = '/changepass'; // Set the route path here
+        });
+    </script>
+</body>
+</html>

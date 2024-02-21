@@ -1,0 +1,83 @@
+body{
+    background-image: url("/images/returnbooks.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #bf4138;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 14vh;
+    font-size: 12vh;
+    font-style: italic;
+    color:black;
+}
+.details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 66vh;
+    height: 34vh;
+    background-color: rgba(214, 226, 146, 0.51);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.name{ 
+    margin-left: 1.5vh;
+    font-size: 5vh;
+    margin-top: 5vh;
+    display: flex;
+}
+.phone{ 
+    margin-left: 1.5vh;
+    font-size: 5vh;
+    margin-top: 5vh;
+    display: flex;
+}
+button{
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+}
+.submit{
+    display:flex;
+    margin-top: 3vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+input{
+    font-size: 3vh;
+    height: 5vh;
+    width: 35vh;
+    background-color: rgba(128, 128, 128, 0.383);
+}
+button:hover{
+    background-color: #45a049;
+}
+#username{
+    margin-left: 2.2vh;
+}
+#phoneno{
+    margin-left: 4.9vh;
+}

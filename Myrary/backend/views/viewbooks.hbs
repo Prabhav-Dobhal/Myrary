@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/viewbooks.css">
+</head>
+<body>
+    <button class="home-button">Home</button>
+    <div class="heading">
+        View All Books
+    </div>
+    <table class="book-table">
+        <thread>
+            <tr>
+                <th>Book Name</th>
+                <th>Quantity</th>
+            </tr>
+        </thread>
+        <tbody>
+            {{!-- Iterate over array named books --}}
+            {{#each books}}
+            <tr>
+                <td>{{this.book}}</td>
+                <td>{{this.quantity}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+    <script>
+        const homeButton = document.querySelector('.home-button');
+        homeButton.addEventListener('click', () => {
+            window.location.href = '/homepage'; // Set the route path here
+        });
+    </script>
+</body>
+</html>

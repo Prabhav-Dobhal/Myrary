@@ -1,0 +1,65 @@
+body{
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+}
+.heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 14vh;
+    font-size: 12vh;
+    font-style: italic;
+}
+.details {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vh;
+    height: 40vh;
+    background-color: rgb(208, 215, 237);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+.email{ 
+    margin-left: 1.5vh;
+    font-size: 7vh;
+    margin-top: 8vh;
+    display: flex;
+}
+.password{ 
+    margin-left: 1.5vh;
+    font-size: 7vh;
+    margin-top: 5vh;
+    display: flex;
+}
+.details button {
+    background-color: #4CAF50; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-weight: bold; 
+    border-radius: 5px; 
+  }
+  
+  .details button:hover {
+    background-color: #45a049; 
+  }
+  .details input{
+    font-size: 2.5vh;
+    background-color: rgba(128, 128, 128, 0.383);
+  }
+  .submit{
+    display:flex;
+    margin-top: 3vh;
+    justify-content: center;
+    align-items: center;
+  }
+  #adminemail{
+    margin-left: 12vh;
+  }
+  #adminpassword{
+    margin-left:2vh;
+  }
